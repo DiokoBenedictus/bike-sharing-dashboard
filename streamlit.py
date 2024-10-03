@@ -288,7 +288,12 @@ with tabs[0]:
     ax.set_ylabel('Total Penyewaan', fontsize=12)
     ax.set_xticklabels(['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'], rotation=45)
     st.pyplot(fig)
-    st.write('Terjadi peningkatan penggunaan sepeda dari hari Senin hingga puncaknya pada hari Kamis di setiap minggunya dalam rentang tahun 2011-2012. Hal tersebut menunjukkan bahwa secara umum pelanggan menggunakan layanan sepeda pada sebagian besar workdays hal ini berkaitan pada aktivitas pelanggan pada workdays yang lebih banyak beraktivitas di luar rumah. Sedangkan untuk weekend terjadi penurunan yang mungkin disebabkan oleh aktivitas pelanggan yang berkurang di hari weekend')
+    st.markdown(
+    """Terdapat peningkatan signifikan dalam total penyewaan sepeda oleh pengguna terdaftar dari bulan Januari hingga bulan Mei yang menunjukkan bahwa semakin banyak orang mendaftar untuk menggunakan layanan sepeda.
+
+Terjadi Penurunan Penyewaan: Setelah bulan Juni, jumlah penyewaan mulai menurun untuk kedua kategori pengguna, dengan penurunan yang lebih tajam pada bulan November dan Desember. Hal ini menunjukkan bahwa minat terhadap penyewaan sepeda menurun pada bulan-bulan musim dingin, ketika aktivitas luar ruangan berkurang._summary_
+    """
+             )
    
 # Tabel Agregasi Mingguan
 with tabs[1]:
@@ -321,7 +326,7 @@ Penyewaan sepeda menunjukkan pola yang berbeda antara pengguna kasual dan terdaf
     ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
     st.pyplot(fig)
     st.write('')
-    st.markdown('Terjadi peningkatan penggunaan sepeda dari hari Senin hingga puncaknya pada hari Kamis di setiap minggunya dalam rentang tahun 2011-2012. Hal tersebut menunjukkan bahwa secara umum pelanggan menggunakan layanan sepeda pada sebagian besar workdays hal ini berkaitan pada aktivitas pelanggan pada workdays yang lebih banyak beraktivitas di luar rumah. Sedangkan untuk weekend terjadi penurunan yang mungkin disebabkan oleh aktivitas pelanggan yang berkurang di hari weekend')
+    st.markdown('Terjadi peningkatan penggunaan sepeda dari hari Senin hingga puncaknya pada hari Jumat di setiap minggunya dalam rentang tahun 2011-2012. Hal tersebut menunjukkan bahwa secara umum pelanggan menggunakan layanan sepeda pada sebagian besar workdays hal ini berkaitan pada aktivitas pelanggan pada workdays yang lebih banyak beraktivitas di luar rumah. Sedangkan untuk weekend terjadi penurunan yang mungkin disebabkan oleh aktivitas pelanggan yang berkurang di hari weekend')
 
 # Tabel Agregasi Berdasarkan Workingday dan Holiday
 with tabs[2]:
