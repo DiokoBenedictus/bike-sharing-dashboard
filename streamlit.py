@@ -55,7 +55,7 @@ if user_type != 'All':
     filtered_data = filtered_data[filtered_data['user_type'] == user_type]
 
 # Main Dashboard
-st.title('Bike Sharing Analysis Dashboard')
+st.title('Rental Frequency and User Characteristics in Bike Sharing System')
 
 # Deskripsi dataset
 st.markdown('''
